@@ -42,16 +42,35 @@ class MovieDetails extends React.Component {
       );
     }
     return (
-      <div data-testid="movie-details">
-        <img alt="Movie Cover" src={ `../${imagePath}` } />
-        <h1>{ `Title: ${title}` }</h1>
-        <p>{ `Subtitle: ${subtitle}` }</p>
-        <p>{ `Storyline: ${storyline}` }</p>
-        <p>{ `Genre: ${genre}` }</p>
-        <p>{ `Rating: ${rating}` }</p>
-        <Link to="/">VOLTAR</Link>
-        <Link to={ `/movies/${movie.id}/edit` }>EDITAR</Link>
-        <Link to="/" onClick={ () => movieAPI.deleteMovie(movie.id) }>DELETAR</Link>
+      <div>
+        <div data-testid="movie-details" className="flex-3 margin-5">
+          <div>
+            <img alt="Movie Cover" className="img-respon" src={ `../${imagePath}` } />
+          </div>
+          <div className="margin-inf">
+            <h1>{ `Title: ${title}` }</h1>
+            <p>{ `Subtitle: ${subtitle}` }</p>
+            <p>{ `Storyline: ${storyline}` }</p>
+            <p>{ `Genre: ${genre}` }</p>
+            <p>{ `Rating: ${rating}` }</p>
+          </div>
+        </div>
+        <div className="flex-2">
+          <Link className="subli btn btn-outline-dark" to="/">Voltar</Link>
+          <Link
+            className="subli btn btn-outline-dark"
+            to={ `/movies/${movie.id}/edit` }
+          >
+            Editar
+          </Link>
+          <Link
+            className="subli btn btn-outline-dark"
+            to="/"
+            onClick={ () => movieAPI.deleteMovie(movie.id) }
+          >
+            Deletar
+          </Link>
+        </div>
       </div>
     );
   }

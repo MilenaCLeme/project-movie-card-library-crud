@@ -1,5 +1,119 @@
 body {
   background-color: whitesmoke;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
+.movie-card-header {
+  align-items: center;
+  background-color: #343a40;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+
+.page-title {
+  color: #f8f9fa;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.movie-list {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 48px 30px;
+  justify-content: center;
+}
+
+.movie-card {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.342);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  margin: 15px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.movie-card-image {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card-body {
+  flex: 1 1 auto;
+  padding: 20px;
+}
+
+.movie-card-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+.movie-card-storyline {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.subli {
+  text-decoration:none;
+  color: black;
+}
+
+.pos-1 {
+  margin-left: 10%;
+  margin-top: 30px;
+}
+
+.margin-10 {
+  margin-top: 10%;
+}
+
+.flex-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.margin-5 {
+  margin-top: 5%;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.margin-inf {
+  margin-left: 20px;
+  margin-right: 10%;
+}
+
+.flex-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.margin-button {
+  margin-top: 10px;
+  margin-right: 5%;
+}
+
+.img-respon {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
